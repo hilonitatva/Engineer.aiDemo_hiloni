@@ -23,7 +23,7 @@ class PostListingTableViewCell: UITableViewCell {
             createdDateFormat.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.SSS'Z'"
             createdDateFormat.timeZone = .current
             if let recievedDate = createdDateFormat.date(from: (hit?.created_at)!) {
-                createdDateFormat.dateFormat = "E,  d MMM yyyy hh:mm:ss a"
+                createdDateFormat.dateFormat = "E, d MMM yyyy hh:mm:ss a"
                 self.postDateLabel.text = createdDateFormat.string(from: recievedDate)
             }
             self.postActiveDeactiveSwitch.isOn = hit?.isActive ?? false

@@ -10,5 +10,5 @@
 "ok"                    = "Ok";
 "pullTORefresh"         = "Pull to refresh";
 "noPostSelected"        = "No Posts Selected.";
-"onePostSelected"       = "Number of Post Selected = 1";
-"multiplePostSelected"  = "Number of Posts Selected =";
+"onePostSelected"       = "Number of Post Selected: 1";
+"multiplePostSelected"  = "Number of Posts Selected:";

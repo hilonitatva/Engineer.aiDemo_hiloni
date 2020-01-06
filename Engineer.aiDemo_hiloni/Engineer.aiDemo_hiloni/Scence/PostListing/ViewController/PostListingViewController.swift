@@ -11,8 +11,8 @@ import UIKit
 class PostListingViewController: BaseViewController {
 
     //MARK:- Outlets  -
-    @IBOutlet weak var postListingTableView: UITableView!
-    @IBOutlet var tableFooterView: UIView!
+    @IBOutlet weak var postListingTableView         : UITableView!
+    @IBOutlet var tableFooterView                   : UIView!
     
     //MARK:- Variable -
     lazy var viewModal           : PostListingViewModal     = PostListingViewModal(viewController: self)
@@ -46,6 +46,7 @@ class PostListingViewController: BaseViewController {
     }
 
 }
+
 //MARK:- Table View Delegate & DataSource -
 extension PostListingViewController: UITableViewDelegate,UITableViewDataSource {
     

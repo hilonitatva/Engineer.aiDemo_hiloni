@@ -153,10 +153,10 @@
 		7BC1833623C3313D00543013 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				7BC1835823C3372500543013 /* Localization */,
+				7BC1835D23C3455E00543013 /* Constants */,
 				7BC1835323C336C000543013 /* Extension */,
+				7BC1835823C3372500543013 /* Localization */,
 				7BC1832723C3308600543013 /* Assets.xcassets */,
-				7BC1834F23C3338E00543013 /* Constant.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -229,6 +229,14 @@
 				7BC1835B23C33C4D00543013 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		7BC1835D23C3455E00543013 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7BC1834F23C3338E00543013 /* Constant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

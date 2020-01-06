@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import  SVProgressHUD
+import SVProgressHUD
 
 class PostListingViewModal {
     
@@ -17,7 +17,7 @@ class PostListingViewModal {
     var hasMore                 : Bool = false
     var isLoading               : Bool = false
     var page                    : Int = 0
-    lazy var pagingTable: (()->()) = {
+    lazy var pagingTable        : (()->()) = {
         if self.viewController.hits.count < self.viewController.postListing?.nbHits ?? 0 && self.hasMore == true && self.isLoading == false {
             self.viewController.postListingTableView.tableFooterView = self.viewController.tableFooterView
             self.page += 1
@@ -52,9 +52,7 @@ class PostListingViewModal {
             self.viewController.title = "\("multiplePostSelected".localize) \(selectedPost.count)"
         }
     }
-    
-    
-    
+
     //MARK:- Call API -
     func getPostListing() {
         self.isLoading = true
