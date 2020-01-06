@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Engineer.aiDemo_hiloni
+
+  Created by PCQ177 on 06/01/20.
+  Copyright © 2020 PCQ177. All rights reserved.
+*/
+
+"projectName"           = "Engineer.aiDemo_hiloni";
+"ok"                    = "Ok";
+"pullTORefresh"         = "Pull to refresh";
+"noPostSelected"        = "No Posts Selected.";
+"onePostSelected"       = "Number of Post Selected = 1";
+"multiplePostSelected"  = "Number of Posts Selected =";

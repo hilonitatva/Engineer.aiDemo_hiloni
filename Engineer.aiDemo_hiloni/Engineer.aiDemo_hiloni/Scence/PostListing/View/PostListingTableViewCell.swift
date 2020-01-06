@@ -10,15 +10,31 @@ import UIKit
 
 class PostListingTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    //MARK:- Ouutlets -
+    @IBOutlet private weak var postTitleLabel: UILabel!
+    @IBOutlet private weak var postDateLabel: UILabel!
+    @IBOutlet private weak var postActiveDeactiveSwitch: UISwitch!
+    
+    //MARK:- Variable -
+    var hit: Hits? {
+        didSet {
+            self.postTitleLabel.text = hit?.title
+            let createdDateFormat = DateFormatter()
+            createdDateFormat.dateFormat = "yyyy-MM-dd'T'hh:mm:ss.SSS'Z'"
+            createdDateFormat.timeZone = .current
+            if let recievedDate = createdDateFormat.date(from: (hit?.created_at)!) {
+                createdDateFormat.dateFormat = "E,  d MMM yyyy hh:mm:ss a"
+                self.postDateLabel.text = createdDateFormat.string(from: recievedDate)
+            }
+            self.postActiveDeactiveSwitch.isOn = hit?.isActive ?? false
+        }
     }
     
+    var toggleSwitch: ((Hits)->())?
+    
+    //MARK:- Action Method -
+    @IBAction func didTapOnPostActiveDeactiveSwitch(_ sender: UISwitch) {
+        self.hit?.isActive = !(self.hit?.isActive ?? false)
+        self.toggleSwitch!(self.hit!)
+    }
 }

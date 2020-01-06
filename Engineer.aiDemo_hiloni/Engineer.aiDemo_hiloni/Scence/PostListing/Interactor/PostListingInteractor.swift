@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class PostListingInteractor {
+    static func callPostListingAPI(page: Int,completionSuccess: @escaping ((Data)->()),failure: @escaping ((String)->())) {
+        APIManager.callRequest(.getPost(page), completionSuccess: { (response) in
+            completionSuccess(response)
+        }) { (error) in
+            failure(error)
+        }
+    }
+}

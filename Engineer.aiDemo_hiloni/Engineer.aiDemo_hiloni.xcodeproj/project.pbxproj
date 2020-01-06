@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7BC1832123C3308600543013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1832023C3308600543013 /* AppDelegate.swift */; };
-		7BC1832323C3308600543013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1832223C3308600543013 /* ViewController.swift */; };
 		7BC1832623C3308600543013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1832423C3308600543013 /* Main.storyboard */; };
 		7BC1832823C3308600543013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1832723C3308600543013 /* Assets.xcassets */; };
 		7BC1832B23C3308600543013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1832923C3308600543013 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,10 @@
 		7BC1834C23C3331300543013 /* APIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1834B23C3331300543013 /* APIManger.swift */; };
 		7BC1834E23C3331B00543013 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1834D23C3331B00543013 /* APIRouter.swift */; };
 		7BC1835023C3338E00543013 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1834F23C3338E00543013 /* Constant.swift */; };
+		7BC1835223C335BC00543013 /* PostListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1835123C335BC00543013 /* PostListing.swift */; };
+		7BC1835523C336CC00543013 /* TableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1835423C336CC00543013 /* TableView + Extension.swift */; };
+		7BC1835723C336D500543013 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1835623C336D500543013 /* String + Extension.swift */; };
+		7BC1835C23C33C4D00543013 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1835B23C33C4D00543013 /* Localizable.strings */; };
 		9B82627769077281E85D6CEB /* Pods_Engineer_aiDemo_hiloni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16703675F78A550455C26882 /* Pods_Engineer_aiDemo_hiloni.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +33,6 @@
 		2DBD86F58ECD546A592620B0 /* Pods-Engineer.aiDemo_hiloni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.aiDemo_hiloni.release.xcconfig"; path = "Target Support Files/Pods-Engineer.aiDemo_hiloni/Pods-Engineer.aiDemo_hiloni.release.xcconfig"; sourceTree = "<group>"; };
 		7BC1831D23C3308600543013 /* Engineer.aiDemo_hiloni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Engineer.aiDemo_hiloni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC1832023C3308600543013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BC1832223C3308600543013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BC1832523C3308600543013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC1832723C3308600543013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC1832A23C3308600543013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,10 @@
 		7BC1834B23C3331300543013 /* APIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManger.swift; sourceTree = "<group>"; };
 		7BC1834D23C3331B00543013 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		7BC1834F23C3338E00543013 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7BC1835123C335BC00543013 /* PostListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListing.swift; sourceTree = "<group>"; };
+		7BC1835423C336CC00543013 /* TableView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView + Extension.swift"; sourceTree = "<group>"; };
+		7BC1835623C336D500543013 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		7BC1835B23C33C4D00543013 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		BBE564D35CC5833CB6F18B6B /* Pods-Engineer.aiDemo_hiloni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.aiDemo_hiloni.debug.xcconfig"; path = "Target Support Files/Pods-Engineer.aiDemo_hiloni/Pods-Engineer.aiDemo_hiloni.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				7BC1832023C3308600543013 /* AppDelegate.swift */,
-				7BC1832223C3308600543013 /* ViewController.swift */,
 				7BC1833323C3312B00543013 /* Modal */,
 				7BC1833423C3312B00543013 /* Networking */,
 				7BC1833523C3312B00543013 /* Scence */,
@@ -122,6 +127,7 @@
 		7BC1833323C3312B00543013 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				7BC1835123C335BC00543013 /* PostListing.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 		7BC1833623C3313D00543013 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				7BC1835823C3372500543013 /* Localization */,
+				7BC1835323C336C000543013 /* Extension */,
 				7BC1832723C3308600543013 /* Assets.xcassets */,
 				7BC1834F23C3338E00543013 /* Constant.swift */,
 			);
@@ -204,6 +212,23 @@
 				7BC1833723C3316B00543013 /* View */,
 			);
 			path = PostListing;
+			sourceTree = "<group>";
+		};
+		7BC1835323C336C000543013 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7BC1835423C336CC00543013 /* TableView + Extension.swift */,
+				7BC1835623C336D500543013 /* String + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7BC1835823C3372500543013 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				7BC1835B23C33C4D00543013 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC1835C23C33C4D00543013 /* Localizable.strings in Resources */,
 				7BC1834A23C331D000543013 /* PostListingTableViewCell.xib in Resources */,
 				7BC1832B23C3308600543013 /* LaunchScreen.storyboard in Resources */,
 				7BC1832823C3308600543013 /* Assets.xcassets in Resources */,
@@ -322,14 +348,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC1832323C3308600543013 /* ViewController.swift in Sources */,
 				7BC1834E23C3331B00543013 /* APIRouter.swift in Sources */,
+				7BC1835723C336D500543013 /* String + Extension.swift in Sources */,
 				7BC1834023C331A200543013 /* PostListingViewController.swift in Sources */,
 				7BC1832123C3308600543013 /* AppDelegate.swift in Sources */,
 				7BC1834C23C3331300543013 /* APIManger.swift in Sources */,
 				7BC1834623C331C000543013 /* PostListingInteractor.swift in Sources */,
+				7BC1835523C336CC00543013 /* TableView + Extension.swift in Sources */,
 				7BC1834923C331D000543013 /* PostListingTableViewCell.swift in Sources */,
 				7BC1833E23C3318D00543013 /* BaseViewController.swift in Sources */,
+				7BC1835223C335BC00543013 /* PostListing.swift in Sources */,
 				7BC1835023C3338E00543013 /* Constant.swift in Sources */,
 				7BC1834223C331AC00543013 /* PostListingViewModal.swift in Sources */,
 				7BC1834423C331B600543013 /* PostListingViewNavigator.swift in Sources */,
