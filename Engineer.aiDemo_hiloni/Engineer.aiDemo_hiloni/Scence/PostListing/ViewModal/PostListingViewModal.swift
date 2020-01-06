@@ -54,7 +54,7 @@ class PostListingViewModal {
     }
 
     //MARK:- Call API -
-    func getPostListing() {
+    private func getPostListing() {
         self.isLoading = true
         let showIndicator = viewController.hits.count > 0 ? false : true
         if showIndicator {
