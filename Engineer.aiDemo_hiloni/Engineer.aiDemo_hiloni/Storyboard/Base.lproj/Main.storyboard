@@ -50,7 +50,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHy-Hr-9Ks">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                             <subviews>
-                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jM8-Mg-Os7">
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jM8-Mg-Os7">
                                     <rect key="frame" x="177.5" y="40" width="20" height="20"/>
                                 </activityIndicatorView>
                             </subviews>

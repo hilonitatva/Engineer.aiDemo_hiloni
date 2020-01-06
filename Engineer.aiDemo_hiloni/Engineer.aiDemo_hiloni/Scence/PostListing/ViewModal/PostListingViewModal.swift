@@ -13,11 +13,11 @@ import SVProgressHUD
 class PostListingViewModal {
     
     //MARK:- Variable -
-    var viewController          : PostListingViewController!
-    var hasMore                 : Bool = false
-    var isLoading               : Bool = false
-    var page                    : Int = 0
-    lazy var pagingTable        : (()->()) = {
+    private var viewController                  : PostListingViewController!
+    private var hasMore                 : Bool = false
+    private var isLoading               : Bool = false
+    private var page                    : Int = 0
+    lazy var pagingTable                : (()->()) = {
         if self.viewController.hits.count < self.viewController.postListing?.nbHits ?? 0 && self.hasMore == true && self.isLoading == false {
             self.viewController.postListingTableView.tableFooterView = self.viewController.tableFooterView
             self.page += 1

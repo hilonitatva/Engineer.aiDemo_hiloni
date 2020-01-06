@@ -15,10 +15,10 @@ class PostListingViewController: BaseViewController {
     @IBOutlet var tableFooterView                   : UIView!
     
     //MARK:- Variable -
-    lazy var viewModal           : PostListingViewModal     = PostListingViewModal(viewController: self)
-    lazy var viewNavigator       : PostListingViewNavigator = PostListingViewNavigator(viewController: self)
-    var postListing              : Post?
-    var hits                     : [Hits] = [Hits]()
+    lazy var viewModal                              : PostListingViewModal     = PostListingViewModal(viewController: self)
+    lazy var viewNavigator                          : PostListingViewNavigator = PostListingViewNavigator(viewController: self)
+    var postListing                                 : Post?
+    var hits                                        : [Hits] = [Hits]()
     
     //MARK:- Controller Method -
     override func viewDidLoad() {
